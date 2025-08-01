@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "corsheaders",
     'food',
     'user',
+  
 ]
 
 REST_FRAMEWORK = {
