@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt',
     "corsheaders",
-    'food'
+    'food',
+    'user',
 ]
 
 REST_FRAMEWORK = {
@@ -55,6 +56,8 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     )
 }
+
+AUTH_USER_MODEL = 'user.CustomUser'
 
 
 MIDDLEWARE = [
